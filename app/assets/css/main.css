@@ -9,17 +9,16 @@
 	/* Couleurs de fond et texte */
 	--color-surface: #ffefd2;
 	--color-font: #2d2620;
-	--color-font-inactive: rgba(18, 15, 13, 0.5);
+	--color-font-inactive: rgba(18, 15, 13, 0.4);
 
 	/* Fonts */
 	--font-sans: system-ui, -apple-system, Aria, sans-serif;
 
-	--spacing-gutter: clamp(2rem, 0.5rem + 2vw, 3rem);
-	--spacing-nav: 6.5rem;
+	--spacing-gutter: clamp(1.5rem, 0.5rem + 2vw, 3rem);
 }
 
 @layer base {
 	body {
-		@apply bg-primary
+		@apply bg-primary font-sans text-sm md:text-base
 	}
 }
