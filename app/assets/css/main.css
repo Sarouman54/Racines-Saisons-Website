@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+	/* Couleurs de Racines & Saisons */
+	--color-primary: #e8751a;
+	--color-secondary: #fda403;
+	--color-accent: #898121;
+
+	/* Couleurs de fond et texte */
+	--color-surface: #ffefd2;
+	--color-font: #2d2620;
+	--color-font-inactive: rgba(18, 15, 13, 0.5);
+
+	/* Fonts */
+	--font-sans: system-ui, -apple-system, Aria, sans-serif;
+
+	--spacing-gutter: clamp(2rem, 0.5rem + 2vw, 3rem);
+	--spacing-nav: 6.5rem;
+}
+
+@layer base {
+	body {
+		@apply bg-primary
+	}
+}
