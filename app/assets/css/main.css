@@ -12,13 +12,21 @@
 	--color-font-inactive: rgba(18, 15, 13, 0.4);
 
 	/* Fonts */
-	--font-sans: system-ui, -apple-system, Aria, sans-serif;
+	--font-sans: system-ui, -apple-system, Arial, sans-serif;
 
-	--spacing-gutter: clamp(1.5rem, 0.5rem + 2vw, 3rem);
+	--spacing-gutter: 1.5rem;
 }
 
 @layer base {
 	body {
-		@apply bg-primary font-sans text-sm md:text-base
+		@apply bg-surface font-sans text-font text-base md:text-lg
+	}
+
+	h1 {
+		@apply font-sans font-bold text-center text-3xl md:text-5xl
+	}
+
+	button, .button-link {
+		@apply py-2 px-4 rounded-full font-sans font-semibold text-center bg-accent text-white
 	}
 }
